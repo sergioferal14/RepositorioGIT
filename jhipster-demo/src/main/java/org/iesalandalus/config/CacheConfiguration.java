@@ -51,6 +51,18 @@ public class CacheConfiguration {
             createCache(cm, org.iesalandalus.domain.User.class.getName());
             createCache(cm, org.iesalandalus.domain.Authority.class.getName());
             createCache(cm, org.iesalandalus.domain.User.class.getName() + ".authorities");
+            createCache(cm, org.iesalandalus.domain.Region.class.getName());
+            createCache(cm, org.iesalandalus.domain.Country.class.getName());
+            createCache(cm, org.iesalandalus.domain.Location.class.getName());
+            createCache(cm, org.iesalandalus.domain.Department.class.getName());
+            createCache(cm, org.iesalandalus.domain.Department.class.getName() + ".employees");
+            createCache(cm, org.iesalandalus.domain.Task.class.getName());
+            createCache(cm, org.iesalandalus.domain.Task.class.getName() + ".jobs");
+            createCache(cm, org.iesalandalus.domain.Employee.class.getName());
+            createCache(cm, org.iesalandalus.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, org.iesalandalus.domain.Job.class.getName());
+            createCache(cm, org.iesalandalus.domain.Job.class.getName() + ".tasks");
+            createCache(cm, org.iesalandalus.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
